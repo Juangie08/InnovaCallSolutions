@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>InnovaCallSolutions - Premium Dark</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <header>
+        <div class='logo'>InnovaCallSolutions</div>
+        <nav>
+            <ul>
+                <li><a href='#hero'>Inicio</a></li>
+                <li><a href='#pasos'>Cómo Funciona</a></li>
+                <li><a href='#servicios'>Servicios</a></li>
+                <li><a href='#contacto' id='openModal'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id='hero'>
+        <div class='overlay'></div>
+        <img src='images/banner.jpg' alt='Banner Profesional' class='hero-img'>
+        <div class='hero-text'>
+            <div class='badge'>❄️ Edición Especial Invierno</div>
+            <h1>Call Center Listo en 24h <br><span class='highlight'>sin Saber Nada</span></h1>
+            <p>Sin complicaciones, nosotros lo hacemos por ti.</p>
+            <div class='cta-buttons'>
+                <button class='btn-primary'>Obtener Oferta</button>
+                <button class='btn-secondary'>Ver Planes</button>
+            </div>
+        </div>
+        <div class='side-card'>
+            <h3>Lleva tu Negocio al Siguiente Nivel</h3>
+            <ul>
+                <li>✔ Productividad al 100%</li>
+                <li>✔ Adiós al Excel manual</li>
+                <li>✔ Control y Medición en Vivo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id='pasos'>
+        <h2>Cómo Funciona</h2>
+        <div class='steps'>
+            <div class='step'>
+                <img src='images/step1.jpg' alt='Registro'>
+                <h3>1. Regístrate</h3>
+                <p>Crea tu cuenta en minutos, sin complicaciones.</p>
+            </div>
+            <div class='step'>
+                <img src='images/step2.jpg' alt='Configura'>
+                <h3>2. Configura tu CRM</h3>
+                <p>Organiza tus clientes y automatiza procesos.</p>
+            </div>
+            <div class='step'>
+                <img src='images/step3.jpg' alt='Vende'>
+                <h3>3. Empieza a vender más</h3>
+                <p>Optimiza tu operación y aumenta tus ventas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id='servicios'>
+        <h2>Nuestros Servicios</h2>
+        <div class='service-buttons'>
+            <button onclick="openServiceModal('callcenter')">Call Center Inteligente</button>
+            <button onclick="openServiceModal('crm')">CRM Integrado</button>
+            <button onclick="openServiceModal('auto')">Automatización</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 InnovaCallSolutions | Síguenos en redes</p>
+    </footer>
+
+    <!-- Modal Contacto -->
+    <div id='modal' class='modal'>
+        <div class='modal-content'>
+            <span class='close' id='closeModal'>&times;</span>
+            <h2>Contáctanos</h2>
+            <form>
+                <input type='text' placeholder='Nombre' required>
+                <input type='email' placeholder='Correo' required>
+                <textarea placeholder='Mensaje'></textarea>
+                <button type='submit'>Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Servicios -->
+    <div id='serviceModal' class='modal'>
+        <div class='modal-content'>
+            <span class='close' id='closeServiceModal'>&times;</span>
+            <div id='serviceDetails'></div>
+        </div>
+    </div>
+
+    <script src='js/script.js'></script>
+</body>
+</html>
